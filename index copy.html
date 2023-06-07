@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Flag Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css/countries.css">
+        <script src="scripts/countries.js"></script>
+    </head>
+
+    <body onload="loadCountriesData()">
+        <div class="gridArea">
+
+            <header>
+                <h2>Welcome to Flag Game</h2>
+                <h3>Guess the flag correctly to earn points!</h3>
+            </header>
+
+            <div id="btnsDiv">
+                <button id="nextFlagBtn" onclick="getRandomFlag()">Next Flag</button>
+                <button id="showHintBtn" onclick="showHint()">Show Hint</button>
+            </div>
+
+            <div id="imgDiv">
+                <img src="" id="countryFlag">
+            </div>
+
+            <div id="counts">
+                <p id="countCorrect">Correct: </p>
+                <p id="countIncorrect">Incorrect: </p>
+            </div>
+
+            <div id="optionBtnsDiv">
+                <button id="option1" onclick="checkAnswer('option1')"></button>
+                <button id="option2" onclick="checkAnswer('option2')"></button>
+            </div>
+
+            <div id="hintPanel"></div>
+
+            <footer>
+                <h3>Do your best, learn, and have fun!</h3>
+            </footer>
+        </div> 
+    </body>
+
+</html>

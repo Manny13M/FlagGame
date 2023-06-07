@@ -1,0 +1,98 @@
+.gridArea {
+    background-color: rgb(225, 225, 225)
+    ;
+	display: grid;
+	grid-template-areas: 
+		"header " 
+        "btnsDiv"
+        "hintPanel"
+        "imgDiv"
+        "optionBtnsDiv"
+        "counts"
+        "footer"
+	;
+	gap: 2%; 
+	place-items: center;
+}
+
+header {
+    grid-area: header; 
+    text-align: center;
+    color: black;
+}
+
+footer {
+    grid-area: footer; 
+    text-align: center;
+    color: black;
+}
+
+#nextFlagBtn
+{
+    padding: 1%;
+}
+
+#showHintBtn
+{
+    padding: 1%;
+}
+
+#imgDiv
+{
+    grid-area: imgDiv; 
+}
+
+#countryFlag
+{
+    width: 100%;
+}
+
+#countCorrect
+{
+    margin: 2%;
+}
+
+#countIncorrect
+{
+    margin: 2%;
+}
+
+#counts
+{
+    grid-area: counts; 
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+}
+
+#option1
+{
+    padding: 1%;  
+}
+
+#option2
+{
+    padding: 1%;  
+}
+
+#btnsDiv
+{
+    grid-area: btnsDiv; 
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#optionBtnsDiv
+{
+    grid-area: optionBtnsDiv; 
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#hintPanel
+{
+    grid-area: hintPanel; 
+}
+
